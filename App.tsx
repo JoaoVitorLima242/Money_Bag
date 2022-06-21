@@ -5,9 +5,9 @@ import { useFonts } from "expo-font"
 import Welcome from './screens/Welcome';
 
 export default function App() {
-  /* let [] = useFonts({
+  let [] = useFonts({
     "Lato"
-  }) */
+  })
   return (
     <Welcome/>
   );
