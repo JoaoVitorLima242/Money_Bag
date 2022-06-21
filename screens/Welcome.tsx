@@ -5,7 +5,8 @@ import styled from "styled-components/native";
 // Custom Components
 import { Container } from "../components/shared";
 import { colors } from "../components/colors";
-import { Text } from "react-native";
+// Image
+import background from "../assets/bgs/background_v1.png"
 
 const WelcomeContainer = styled(Container)`
     background-color: ${colors.secondary};
@@ -19,6 +20,13 @@ const TopSection = styled.View`
     flex: 1;
     max-height: 55%;
 `;
+
+const TopImage = styled.Image`
+    width: 100%;
+    height: 100%;
+    resize-mode: stretch;
+`
+
 const BottomSection = styled.View`
     width: 100%;
     padding: 25px;
@@ -31,7 +39,9 @@ const Welcome: FunctionComponent = () => {
         <>
             <StatusBar style="light"/>
             <WelcomeContainer>
-                <TopSection></TopSection>
+                <TopSection>
+                    <TopImage source={background}/>
+                </TopSection>
                 <BottomSection></BottomSection>
             </WelcomeContainer>
         </>
