@@ -20,7 +20,7 @@ const WelcomeContainer = styled(Container)`
 
 const TopSection = styled.View`
     width: 100%;
-    flex: 1;
+    flex: 2;
     max-height: 55%;
 `;
 
