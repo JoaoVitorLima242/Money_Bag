@@ -7,6 +7,8 @@ import { Container } from "../components/shared";
 import { colors } from "../components/colors";
 // Image
 import background from "../assets/bgs/background_v1.png"
+import BigText from "../components/Text/BigText";
+import SmallText from "../components/Text/SmallText";
 
 const WelcomeContainer = styled(Container)`
     background-color: ${colors.secondary};
@@ -42,7 +44,14 @@ const Welcome: FunctionComponent = () => {
                 <TopSection>
                     <TopImage source={background}/>
                 </TopSection>
-                <BottomSection></BottomSection>
+                <BottomSection>
+                    <BigText textStyles={{width: "70%", marginBottom: 25}}>
+                        Best way to track your money
+                    </BigText>
+                    <SmallText textStyles={{width: "70%", marginBottom: 25}}>
+                        Best payment method, connect your money to your friends and family.
+                    </SmallText>
+                </BottomSection>
             </WelcomeContainer>
         </>
     )
